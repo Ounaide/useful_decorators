@@ -23,6 +23,8 @@ def stopwatch(f):
         print(f"Fonction '{f.__name__}()' terminée en {float(end-start)}s")
     return wrapper
 
+#----------------------
+#Exemple:
 @stopwatch
 @repeat(5)
 def hello():
